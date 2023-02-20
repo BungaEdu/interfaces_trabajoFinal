@@ -1,3 +1,12 @@
 - Si te da un error de compilacion por la versión
 lo tienes que cambiar tanto en tu manifiest como en el gradle.
 
+1 pantalla: login o registro
+2 pantalla: registro con editviews para registrarse [nombre, edad, sexo]
+3 pantalla: login, meter usuario y contraseña [solo habrá una válida]
+4 pantalla: 4 videos y sus descripciones [pantalla estática sin scroll]
+5 pantalla: cuando se abre el vídeo se pasa a otra pantalla a reproducir vídeo
+
+Contemplar errores de registro y login,
+que la interfaz sea parecido a una app,
+en este caso Netflix
