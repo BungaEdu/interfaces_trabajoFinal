@@ -10,27 +10,44 @@
         android:id="@+id/linearPrincipal"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white"
+        android:background="@android:color/black"
         android:orientation="vertical">
 
         <LinearLayout
             android:id="@+id/linearBanner"
             android:layout_width="match_parent"
-            android:layout_height="119dp"
+            android:layout_height="150sp"
             android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/imgBanner"
-                android:layout_width="match_parent"
-                android:layout_height="200sp"
-                android:layout_weight="1"
+                android:layout_width="150sp"
+                android:layout_height="100sp"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginStart="125sp"
                 app:srcCompat="@drawable/img_netflix_banner" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="200sp"
+            android:layout_height="42dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Quién eres? Elige tu perfil"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350sp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
             android:orientation="horizontal">
 
             <LinearLayout
@@ -39,20 +56,21 @@
                 android:layout_weight="1"
                 android:orientation="vertical">
 
-                <ImageView
+                <ImageButton
                     android:id="@+id/btPerfil1"
-                    android:layout_width="150sp"
-                    android:layout_height="150sp"
+                    android:layout_width="108dp"
+                    android:layout_height="108dp"
                     android:layout_gravity="center"
-                    tools:srcCompat="@tools:sample/avatars" />
+                    tools:srcCompat="@drawable/img_main_perfil1" />
 
                 <TextView
                     android:id="@+id/textPerfil1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center|center_horizontal"
-                    android:text="Perfil 1"
-                    android:textAlignment="center" />
+                    android:text="Edu"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white" />
             </LinearLayout>
 
             <LinearLayout
@@ -61,27 +79,29 @@
                 android:layout_weight="1"
                 android:orientation="vertical">
 
-                <ImageView
+                <ImageButton
                     android:id="@+id/btPerfil2"
-                    android:layout_width="150sp"
-                    android:layout_height="150sp"
+                    android:layout_width="108sp"
+                    android:layout_height="108sp"
                     android:layout_gravity="center"
-                    tools:srcCompat="@tools:sample/avatars" />
+                    tools:srcCompat="@drawable/img_main_perfil2" />
 
                 <TextView
                     android:id="@+id/textPerfil2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center|center_horizontal"
-                    android:text="Perfil 2"
-                    android:textAlignment="center" />
+                    android:text="Jesus"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white" />
             </LinearLayout>
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="200sp"
+            android:layout_width="350sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
             android:orientation="horizontal">
 
             <LinearLayout
@@ -90,20 +110,21 @@
                 android:layout_weight="1"
                 android:orientation="vertical">
 
-                <ImageView
+                <ImageButton
                     android:id="@+id/btPerfil3"
-                    android:layout_width="150sp"
-                    android:layout_height="150sp"
+                    android:layout_width="108sp"
+                    android:layout_height="108sp"
                     android:layout_gravity="center"
-                    tools:srcCompat="@tools:sample/avatars" />
+                    tools:srcCompat="@drawable/img_main_perfil3" />
 
                 <TextView
                     android:id="@+id/textPerfil3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center|center_horizontal"
-                    android:text="Perfil 1"
-                    android:textAlignment="center" />
+                    android:text="Hermanu"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white" />
             </LinearLayout>
 
             <LinearLayout
@@ -112,10 +133,10 @@
                 android:layout_weight="1"
                 android:orientation="vertical">
 
-                <ImageView
+                <ImageButton
                     android:id="@+id/btRegistro"
-                    android:layout_width="150sp"
-                    android:layout_height="150sp"
+                    android:layout_width="108sp"
+                    android:layout_height="108sp"
                     android:layout_gravity="center"
                     tools:srcCompat="@tools:sample/avatars" />
 
@@ -124,8 +145,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center|center_horizontal"
-                    android:text="Perfil 2"
-                    android:textAlignment="center" />
+                    android:text="+ Añadir perfil"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white" />
             </LinearLayout>
 
         </LinearLayout>

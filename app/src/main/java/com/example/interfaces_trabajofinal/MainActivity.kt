@@ -13,17 +13,23 @@ class MainActivity : AppCompatActivity() {
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        /*binding.botonRegistrar.setOnClickListener {
-            val intentRegistrar = Intent(this, Login::class.java)
-            //intentCrearPers.putExtra("enviarImagenClase", enviarImagenClase)
+        binding.btPerfil1.setOnClickListener {
+            val intentRegistrar = Intent(this, PaginaPrincipal::class.java)
+            startActivity(intentRegistrar)
+        }
+        binding.btPerfil2.setOnClickListener {
+            val intentRegistrar = Intent(this, PaginaPrincipal::class.java)
+            startActivity(intentRegistrar)
+        }
+        binding.btPerfil3.setOnClickListener {
+            val intentRegistrar = Intent(this, PaginaPrincipal::class.java)
             startActivity(intentRegistrar)
         }
 
-        binding.botonLogin.setOnClickListener {
-            val intentLogin = Intent(this, PaginaPrincipal::class.java)
-            //intentElegirPers.putExtra("enviarImagenClase", enviarImagenClase)
+        binding.btRegistro.setOnClickListener {
+            val intentLogin = Intent(this, Login::class.java)
             startActivity(intentLogin)
-        }*/
+        }
 
     }
 }
