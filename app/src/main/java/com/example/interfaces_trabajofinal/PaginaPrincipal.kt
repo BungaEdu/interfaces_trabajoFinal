@@ -18,8 +18,6 @@ class PaginaPrincipal : AppCompatActivity() {
             startActivity(intentMain)
         }
 
-        val serieElegida = ""
-
         binding.btImgMiercoles.setOnClickListener {
             val intentMain = Intent(this, PaginaReproductor::class.java)
             //Yo llamo a serie y me devuelve el valor de al lao, el value.

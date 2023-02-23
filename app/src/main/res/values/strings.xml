@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">interfaces_trabajoFinal</string>
+    <string name="desc_miercoles">Cuando expulsan a Miércoles por orquestar una broma deliciosamente perversa, sus padres deciden enviarla a la Academia Nunca Más, el internado donde se enamoraron.
+Protagonizada por: Jenna Ortega, Gwendoline Christie, Riki Lindhome… más
+Creada por: Alfred Gough, Miles Millar</string>
+    <string name="desc_elite">Uno de los nuevos alumnos llama la atención de Patrick, y otra sorprende a Cayetana al defender a Philippe. Benjamín implanta medidas más estrictas en el colegio.
+    Protagonizado por: Itzan Escamilla, Miguel Bernardeau, Danna Paola… más
+    Creada por Carlos Montero, Darío Madrona</string>
+    <string name="desc_walking">Maggie cuenta su historia, dando inicio a una misión que debe dirigir Negan. Daryl rebusca en una base, y los auditores de la Mancomunidad vigilan al equipo de eugene.
+    Protagonizada por: Andrew Lincoln, Steven Yeun, Norman Reedus… más</string>
 </resources>

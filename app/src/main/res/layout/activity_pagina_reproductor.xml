@@ -13,37 +13,97 @@
         android:orientation="vertical">
 
         <ImageView
+            android:id="@+id/btImgAtras"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/img_rep_atras"
+            android:padding="3dp" />
+
+        <ImageView
             android:id="@+id/img_reproductor"
-            android:layout_width="match_parent"
-            android:layout_height="332dp"
-            android:background="@drawable/img_pantallaprincipal_miercoles" />
+            android:layout_width="410dp"
+            android:layout_height="250dp" />
 
         <TextView
             android:id="@+id/textNomSerie"
             android:layout_width="match_parent"
             android:layout_height="59dp"
+            android:autoSizeTextType="uniform"
+            android:padding="5dp"
             android:text="TextView"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btReproducir"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:text="Reproducir" />
 
         <Button
             android:id="@+id/btDescargar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:text="Descargar T1:1" />
 
         <TextView
             android:id="@+id/textDescrip"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="142dp"
             android:autoSizeTextType="uniform"
+            android:padding="5dp"
             android:text="TextView"
-            android:textColor="@color/white" />
+            android:textColor="#CCCCCC" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/btImgDescargar"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="32dp"
+                android:background="@drawable/img_rep_descargar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btImgCompartir"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.703" />
+
+            <ImageView
+                android:id="@+id/btImgValorar"
+                android:layout_width="65dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="28dp"
+                android:background="@drawable/img_rep_valorar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btImgMilista"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.772" />
+
+            <ImageView
+                android:id="@+id/btImgCompartir"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="32dp"
+                android:background="@drawable/img_rep_compartir"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btImgValorar"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.722" />
+
+            <ImageView
+                android:id="@+id/btImgMilista"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="32dp"
+                android:background="@drawable/img_rep_milista"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.74" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
