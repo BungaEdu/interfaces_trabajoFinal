@@ -61,7 +61,7 @@
                     android:layout_width="108dp"
                     android:layout_height="108dp"
                     android:layout_gravity="center"
-                    tools:srcCompat="@drawable/img_main_perfil1" />
+                    android:background="@drawable/prueba1" />
 
                 <TextView
                     android:id="@+id/textPerfil1"
@@ -84,7 +84,8 @@
                     android:layout_width="108sp"
                     android:layout_height="108sp"
                     android:layout_gravity="center"
-                    tools:srcCompat="@drawable/img_main_perfil2" />
+                    android:background="@drawable/prueba2"
+                    tools:srcCompat="@drawable/prueba2" />
 
                 <TextView
                     android:id="@+id/textPerfil2"
@@ -115,7 +116,8 @@
                     android:layout_width="108sp"
                     android:layout_height="108sp"
                     android:layout_gravity="center"
-                    tools:srcCompat="@drawable/img_main_perfil3" />
+                    android:background="@drawable/prueba3"
+                    tools:srcCompat="@drawable/prueba3" />
 
                 <TextView
                     android:id="@+id/textPerfil3"
@@ -138,7 +140,7 @@
                     android:layout_width="108sp"
                     android:layout_height="108sp"
                     android:layout_gravity="center"
-                    tools:srcCompat="@tools:sample/avatars" />
+                    android:background="@drawable/img_mas5" />
 
                 <TextView
                     android:id="@+id/textAnyadirPerfil"
