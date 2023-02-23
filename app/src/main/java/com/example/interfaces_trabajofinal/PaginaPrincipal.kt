@@ -18,6 +18,27 @@ class PaginaPrincipal : AppCompatActivity() {
             startActivity(intentMain)
         }
 
+        val serieElegida = ""
+
+        binding.btImgMiercoles.setOnClickListener {
+            val intentMain = Intent(this, PaginaReproductor::class.java)
+            //Yo llamo a serie y me devuelve el valor de al lao, el value.
+            intentMain.putExtra("serieElegida", "miercoles")
+            startActivity(intentMain)
+        }
+
+        binding.btImgElite.setOnClickListener {
+            val intentMain = Intent(this, PaginaReproductor::class.java)
+            intentMain.putExtra("serieElegida", "elite")
+            startActivity(intentMain)
+        }
+
+        binding.btImgWalking.setOnClickListener {
+            val intentMain = Intent(this, PaginaReproductor::class.java)
+            intentMain.putExtra("serieElegida", "walking")
+            startActivity(intentMain)
+        }
+
 
     }
 }

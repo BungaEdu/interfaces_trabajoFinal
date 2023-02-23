@@ -63,22 +63,22 @@
                 android:layout_height="163dp"
                 android:orientation="horizontal">
 
-                <ImageView
-                    android:id="@+id/imageView2"
+                <ImageButton
+                    android:id="@+id/btImgMiercoles"
                     android:layout_width="116dp"
                     android:layout_height="140dp"
                     android:layout_marginStart="15dp"
                     android:background="@drawable/img_pantallaprincipal_miercoles" />
 
-                <ImageView
-                    android:id="@+id/imageView3"
+                <ImageButton
+                    android:id="@+id/btImgElite"
                     android:layout_width="116dp"
                     android:layout_height="140dp"
                     android:layout_marginStart="15dp"
                     android:background="@drawable/img_pantallaprincipal_elite" />
 
-                <ImageView
-                    android:id="@+id/imageView4"
+                <ImageButton
+                    android:id="@+id/btImgWalking"
                     android:layout_width="116dp"
                     android:layout_height="140dp"
                     android:layout_marginStart="15dp"
