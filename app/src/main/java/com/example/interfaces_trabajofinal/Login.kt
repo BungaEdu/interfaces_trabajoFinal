@@ -3,6 +3,7 @@ package com.example.interfaces_trabajofinal
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.example.interfaces_trabajofinal.databinding.ActivityLoginBinding
 
 class Login : AppCompatActivity() {
@@ -12,15 +13,27 @@ class Login : AppCompatActivity() {
 
         val binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
-/*
-        binding.btPerfil1.setOnClickListener {
+
+        binding.btLoginAtras.setOnClickListener {
             val intentMain = Intent(this, MainActivity::class.java)
             startActivity(intentMain)
         }
 
-        binding.btPerfil1.setOnClickListener {
-            val intentMain = Intent(this, MainActivity::class.java)
-            startActivity(intentMain)
-        }*/
+        binding.btGuardar.setOnClickListener {
+            val nombre = binding.editNombrePerfil.text
+            if (nombre.isEmpty()){
+                Toast.makeText(
+                    this, "Debes rellenar el nombre del perfil",
+                    Toast.LENGTH_SHORT
+                ).show()
+            } else {
+                Toast.makeText(
+                    this, "Usuario $nombre añadido",
+                    Toast.LENGTH_LONG
+                ).show()
+                val intentMain = Intent(this, MainActivity::class.java)
+                startActivity(intentMain)
+            }
+        }
     }
 }
