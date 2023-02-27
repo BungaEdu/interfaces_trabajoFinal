@@ -13,6 +13,13 @@
         android:theme="@style/Theme.Design.NoActionBar"
         tools:targetApi="33">
         <activity
+            android:name=".Calificacion"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".PaginaReproductor"
             android:exported="false">
             <meta-data

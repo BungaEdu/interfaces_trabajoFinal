@@ -4,8 +4,11 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
+import androidx.annotation.ColorInt
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import com.example.interfaces_trabajofinal.databinding.ActivityPaginaReproductorBinding
+import java.security.AccessController.getContext
 
 
 class PaginaReproductor : AppCompatActivity() {
@@ -25,6 +28,14 @@ class PaginaReproductor : AppCompatActivity() {
                 "Cuando expulsan a Miércoles por orquestar una broma deliciosamente perversa, sus padres deciden enviarla a la Academia Nunca Más, el internado donde se enamoraron.\n" +
                         "Protagonizada por: Jenna Ortega, Gwendoline Christie, Riki Lindhome… más\n" +
                         "Creada por: Alfred Gough, Miles Millar"
+            binding.textAnyo.text = "2022"
+            binding.btAnyosCalif.text = "+12"
+            binding.btAnyosCalif.setOnClickListener {
+                val intentMain = Intent(this, Calificacion::class.java)
+                intentMain.putExtra("serieElegida", "miercoles")
+                startActivity(intentMain)
+            }
+            binding.textCapit.text = "10 capitulos"
         }
         if (serieElegida == "elite") {
             binding.imgReproductor.setImageResource(R.drawable.img_rep_elite)
@@ -33,6 +44,14 @@ class PaginaReproductor : AppCompatActivity() {
                 "Uno de los nuevos alumnos llama la atención de Patrick, y otra sorprende a Cayetana al defender a Philippe. Benjamín implanta medidas más estrictas en el colegio.\n" +
                         "Protagonizado por: Itzan Escamilla, Miguel Bernardeau, Danna Paola… más\n" +
                         "Creada por Carlos Montero, Darío Madrona"
+            binding.textAnyo.text = "2021"
+            binding.btAnyosCalif.text = "+18"
+            binding.btAnyosCalif.setOnClickListener {
+                val intentMain = Intent(this, Calificacion::class.java)
+                intentMain.putExtra("serieElegida", "elite")
+                startActivity(intentMain)
+            }
+            binding.textCapit.text = "11 temporadas"
         }
         if (serieElegida == "walking") {
             binding.imgReproductor.setImageResource(R.drawable.img_rep_walking)
@@ -40,6 +59,14 @@ class PaginaReproductor : AppCompatActivity() {
             binding.textDescrip.text =
                 "Maggie cuenta su historia, dando inicio a una misión que debe dirigir Negan. Daryl rebusca en una base, y los auditores de la Mancomunidad vigilan al equipo de eugene.\n" +
                         "Protagonizada por: Andrew Lincoln, Steven Yeun, Norman Reedus… más"
+            binding.textAnyo.text = "2022"
+            binding.btAnyosCalif.text = "+18"
+            binding.btAnyosCalif.setOnClickListener {
+                val intentMain = Intent(this, Calificacion::class.java)
+                intentMain.putExtra("serieElegida", "walking")
+                startActivity(intentMain)
+            }
+            binding.textCapit.text = "6 temporadas"
         }
 
         binding.btImgAtras.setOnClickListener() {
