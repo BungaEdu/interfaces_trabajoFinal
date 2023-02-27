@@ -14,11 +14,13 @@ class Login : AppCompatActivity() {
         val binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        //Botón para volver a la pantalla MainActivity
         binding.btLoginAtras.setOnClickListener {
             val intentMain = Intent(this, MainActivity::class.java)
             startActivity(intentMain)
         }
 
+        //Botón para guardar, al pulsar sale un toast y vas a la pantalla MainActivity
         binding.btGuardar.setOnClickListener {
             val nombre = binding.editNombrePerfil.text
             if (nombre.isEmpty()){

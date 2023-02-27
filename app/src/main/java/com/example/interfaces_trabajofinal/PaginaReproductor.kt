@@ -19,8 +19,10 @@ class PaginaReproductor : AppCompatActivity() {
         val binding = ActivityPaginaReproductorBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        //Recojo la información de la pantalla anterior respecto a la serie que se ha elegido
         var serieElegida = intent.getStringExtra("serieElegida")
 
+        //Dependiendo de la serie que se seleccione, se cargará información diferente
         if (serieElegida == "miercoles") {
             binding.imgReproductor.setImageResource(R.drawable.img_rep_miercoles)
             binding.textNomSerie.text = "Miércoles"
@@ -59,20 +61,24 @@ class PaginaReproductor : AppCompatActivity() {
             binding.textDescrip.text =
                 "Maggie cuenta su historia, dando inicio a una misión que debe dirigir Negan. Daryl rebusca en una base, y los auditores de la Mancomunidad vigilan al equipo de eugene.\n" +
                         "Protagonizada por: Andrew Lincoln, Steven Yeun, Norman Reedus… más"
-            binding.textAnyo.text = "2022"
+            binding.textAnyo.text = "2021"
             binding.btAnyosCalif.text = "+18"
             binding.btAnyosCalif.setOnClickListener {
                 val intentMain = Intent(this, Calificacion::class.java)
                 intentMain.putExtra("serieElegida", "walking")
                 startActivity(intentMain)
             }
-            binding.textCapit.text = "6 temporadas"
+            binding.textCapit.text = "11 temporadas"
         }
 
+        //Botón para volver a traás
         binding.btImgAtras.setOnClickListener() {
-            val intentMain = Intent(this, PaginaPrincipal::class.java)
+            val intentMain = Intent(this,
+                PaginaPrincipal::class.java)
             startActivity(intentMain)
         }
+
+        //Botones reproducir y descargar
         binding.btReproducir.setOnClickListener() {
             Toast.makeText(
                 this, "Capitulo no disponible",
@@ -85,6 +91,8 @@ class PaginaReproductor : AppCompatActivity() {
                 Toast.LENGTH_SHORT
             ).show()
         }
+
+        //Los botone de la parte inferior
         binding.btImgMilista.setOnClickListener() {
             Toast.makeText(
                 this, "Añadido a ''Mi Lista''",
