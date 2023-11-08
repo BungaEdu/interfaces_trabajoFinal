@@ -10,3 +10,5 @@ lo tienes que cambiar tanto en tu manifiest como en el gradle.
 Contemplar errores de registro y login,
 que la interfaz sea parecido a una app,
 en este caso Netflix
+
+------------------------------------------------
